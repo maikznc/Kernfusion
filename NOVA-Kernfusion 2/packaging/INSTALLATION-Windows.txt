@@ -1,0 +1,30 @@
+NOVA Kernfusion – Installation unter Windows
+============================================
+
+1. Vor dem Entpacken: Rechtsklick auf die ZIP-Datei → Eigenschaften →
+   unten bei "Sicherheit" das Häkchen "Zulassen" setzen → OK.
+   (Sonst blockiert Windows die Datei, weil sie aus dem Internet kommt.)
+2. ZIP entpacken.
+3. Rechtsklick auf "Installieren.bat" → "Als Administrator ausführen".
+   Das kopiert "NOVA Kernfusion.vst3" nach
+   C:\Programme\Gemeinsame Dateien\VST3
+   (Alternativ den Ordner "NOVA Kernfusion.vst3" von Hand dorthin kopieren.)
+4. Windows kann beim ersten Mal "Der Computer wurde durch Windows geschützt"
+   anzeigen: auf "Weitere Informationen" → "Trotzdem ausführen" klicken
+   (das Plugin ist nicht bei Microsoft signiert).
+
+IN ABLETON
+----------
+Optionen → Einstellungen → Plug-Ins → "VST3-Plug-In-Systemordner verwenden"
+einschalten → "Neu scannen". Das Plugin steht unter Plug-Ins → NOVA →
+NOVA Kernfusion. Als LETZTES Plugin auf den Master legen.
+
+ERSTE SCHRITTE
+--------------
+1. Song abspielen, in Kernfusion auf "Ein Klick mastern" drücken.
+   Kernfusion hört ca. 20 Sekunden mit und stellt danach alle Module ein.
+2. Mit den Reglern Lautheit, Bass, Wärme, Punch, Breite, Luft, Glanz nachregeln.
+3. Reiter "Industrielautstärke": Song einmal komplett durchlaufen lassen.
+
+WICHTIG VOR DEM EXPORT: "Vorher / Nachher" und die Plattform-Vorschau ("Anhören")
+ausschalten – sonst landen sie im Bounce.

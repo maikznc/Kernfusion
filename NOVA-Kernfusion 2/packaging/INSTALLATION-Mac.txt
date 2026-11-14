@@ -1,0 +1,43 @@
+NOVA Kernfusion – Installation auf dem Mac
+==========================================
+
+WEG A: Installer (empfohlen)
+----------------------------
+1. Doppelklick auf "NOVA-Kernfusion-…-Mac-Installer.pkg".
+2. macOS meldet beim ersten Mal, dass der Entwickler nicht verifiziert ist
+   (das Plugin ist nicht bei Apple registriert). Dann:
+   Systemeinstellungen → Datenschutz & Sicherheit → ganz unten
+   "Trotzdem öffnen" klicken → Installer läuft durch (Passwort eingeben).
+3. Fertig. Das Plugin liegt jetzt in
+   /Library/Audio/Plug-Ins/VST3       (für Ableton)
+   /Library/Audio/Plug-Ins/Components (AU, für Logic)
+
+WEG B: Von Hand kopieren
+------------------------
+1. "NOVA-Kernfusion-…-Mac-Plugins.zip" entpacken.
+2. "NOVA Kernfusion.vst3" nach  ~/Library/Audio/Plug-Ins/VST3/  ziehen,
+   "NOVA Kernfusion.component" nach  ~/Library/Audio/Plug-Ins/Components/
+   (im Finder: Gehe zu → Gehe zum Ordner … → Pfad einfügen).
+3. Weil die Dateien aus dem Internet kommen, einmal im Terminal freigeben:
+   xattr -cr ~/Library/Audio/Plug-Ins/VST3/"NOVA Kernfusion.vst3"
+   xattr -cr ~/Library/Audio/Plug-Ins/Components/"NOVA Kernfusion.component"
+
+IN ABLETON
+----------
+Einstellungen → Plug-Ins → "VST3-Plug-In-Systemordner verwenden" einschalten
+→ "Neu scannen". Das Plugin steht dann unter Plug-Ins → NOVA →
+NOVA Kernfusion. Als LETZTES Plugin auf den Master legen.
+
+ERSTE SCHRITTE
+--------------
+1. Song abspielen, in Kernfusion auf "Ein Klick mastern" drücken.
+   Kernfusion hört ca. 20 Sekunden mit (am besten den lautesten Teil, z. B. Refrain/Drop)
+   und stellt danach alle Module ein.
+2. Mit den Reglern Lautheit, Bass, Wärme, Punch, Breite, Luft, Glanz nachregeln.
+3. "Vorher / Nachher" vergleicht pegelgleich mit dem Original.
+4. Reiter "Industrielautstärke": Song einmal komplett durchlaufen lassen –
+   dann siehst du, ob er laut genug ist und was Spotify & Co. damit machen.
+
+WICHTIG VOR DEM EXPORT: "Vorher / Nachher" und die Plattform-Vorschau ("Anhören")
+ausschalten – sonst landen sie im Bounce. Kernfusion zeigt oben einen gelben
+Hinweis, solange eins davon aktiv ist.

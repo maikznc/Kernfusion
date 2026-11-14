@@ -1,0 +1,43 @@
+NOVA Kernfusion – so kommt der Ordner auf GitHub
+================================================
+
+1. NEUES REPO ANLEGEN
+   github.com → oben rechts "+" → "New repository"
+   Name: NOVA-Kernfusion, auf "Private" stellen.
+   Bei README, .gitignore und Lizenz NICHTS ankreuzen → "Create repository".
+
+2. DATEIEN HOCHLADEN
+   Auf der neuen Repo-Seite auf den Link "uploading an existing file" klicken.
+   Im Finder den Ordner "NOVA-Kernfusion" öffnen, alles markieren (Cmd + A)
+   und ins Browserfenster ziehen. Wichtig: den INHALT ziehen, nicht den Ordner selbst.
+   Warten, bis alle Dateien in der Liste stehen → unten "Commit changes".
+
+   Hinweis: GitHub nimmt pro Upload höchstens 100 Dateien. Falls es meckert,
+   erst die Ordner "modules", "plugins", "scripts" hochladen, danach den Rest.
+
+3. WORKFLOW ANLEGEN (der Teil, der die Plugins baut)
+   Im Repo auf "Add file" → "Create new file".
+   Als Dateinamen eintippen:   .github/workflows/build.yml
+   Die Datei "WORKFLOW-fuer-GitHub.txt" mit TextEdit öffnen, alles kopieren
+   (Cmd + A, Cmd + C) und ins große Feld einfügen → "Commit changes".
+   Gibt es schon eine Workflow-Datei (z. B. main.yml): anklicken → Stift-Symbol
+   → alles markieren → neuen Inhalt einfügen → "Commit changes".
+
+   Der Workflow findet das Projekt selbst – egal ob die Dateien direkt im Repo
+   liegen, im Unterordner "NOVA-Kernfusion" oder als hochgeladene ZIP.
+   Fehlt etwas, steht im roten Schritt "Projekt suchen" auf Deutsch, was fehlt.
+
+4. ABWARTEN
+   Oben auf "Actions" klicken. "NOVA Kernfusion bauen" läuft jetzt –
+   Mac und Windows gleichzeitig, ca. 15–25 Minuten.
+   Gelber Punkt = läuft, grüner Haken = fertig, rotes Kreuz = Fehler.
+
+5. HERUNTERLADEN
+   Den Lauf mit grünem Haken öffnen → ganz unten bei "Artifacts":
+   - NOVA-Kernfusion-Mac       (Installer .pkg + ZIP)
+   - NOVA-Kernfusion-Windows   (ZIP mit Installieren.bat)
+   Installationsanleitung liegt jeweils bei.
+
+WENN ETWAS ROT WIRD
+   Auf den roten Job klicken, den Schritt mit dem roten Kreuz aufklappen und
+   einen Screenshot der letzten roten Zeilen schicken.
